@@ -7,7 +7,7 @@ import org.apache.spark.sql.Row
 /**
   * Created by tianyi on 14/02/2018.
   */
-object hw {
+object Hw {
 
   var schemaArr = List(
     ("eventName", 0),
@@ -25,7 +25,8 @@ object hw {
     conf.setAppName("check first app")
     conf.setMaster("local")
     val sc = new SparkContext(conf)
-    val rdd = sc.textFile("/Users/tianyi/speech/testScala/data/json.txt")
+    val rdd = sc.textFile("/data2/user_data/his/data/djm/scala/data/json.txt")
+    //val rdd = sc.textFile("/Users/tianyi/speech/testScala/data/json.txt")
     println("count is ", rdd.count())
     println("Hi!")
     System.out.println("testing")

@@ -2,7 +2,8 @@ name := "testScala"
 
 version := "1.0"
 
-scalaVersion := "2.11.0"
+scalaVersion := "2.10.5"
+//scalaVersion := "2.11.0"
 
 libraryDependencies ++= Seq (
   "org.apache.spark" %% "spark-sql" % "1.6.3",
